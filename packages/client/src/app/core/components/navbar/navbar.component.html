@@ -1,0 +1,22 @@
+<div class="navbar-container frow sb">
+    <!-- TODO: should be component-->
+    <div class="navigation-section">
+        <!--TODO: should be visible only on board page-->
+        <mng-button icon="previous" (click)="onBack()"></mng-button>
+
+        <mng-button title="Boards"></mng-button>
+    </div>
+    <div class="main-logo-container frow">
+        <mat-icon svgIcon="main-logo"></mat-icon>
+        <div class="main-logo-title">
+            ManagAir
+        </div>
+    </div>
+    <!-- TODO: should be component-->
+    <div class="user-section frow">
+        <mng-button icon="plus" class="navbar-button"></mng-button>
+        <mng-button icon="bell" class="navbar-button"></mng-button>
+        <img src="/assets/images/default-avatar.png"
+             class="user-avatar navbar-button"/>
+    </div>
+</div>

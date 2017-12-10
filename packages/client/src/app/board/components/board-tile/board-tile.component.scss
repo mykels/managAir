@@ -1,0 +1,20 @@
+@import "../../../../css/colors";
+
+.board-tile-container {
+  height: 100px;
+  width: 300px;
+  background-image: var(--button-blue);
+  box-shadow: var(--button-blue-shadow);
+  border-radius: 3px;
+  margin: 10px 10px;
+
+  &:hover {
+    background-image: var(--button-dark-blue);
+    cursor: pointer;
+  }
+}
+
+.board-tile {
+  color: var(--white);
+  padding: 10px 10px;
+}

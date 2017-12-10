@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IconLoader } from "./core/services/icon-loader";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  constructor() {
-  }
+export class AppComponent implements OnInit {
+    constructor(private iconLoader: IconLoader) {
+    }
+
+    ngOnInit(): void {
+        this.loadSvgIcons();
+    }
+
+    loadSvgIcons() {
+        this.iconLoader.load();
+    }
 }

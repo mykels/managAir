@@ -14,7 +14,6 @@
     "@angular/common": "5.0.4",
     "@angular/compiler": "5.0.4",
     "@angular/core": "5.0.4",
-    "@angular/flex-layout": "^2.0.0-beta.10-4905443",
     "@angular/forms": "5.0.4",
     "@angular/http": "5.0.4",
     "@angular/material": "^5.0.0-rc.2",
@@ -25,6 +24,7 @@
     "classlist.js": "^1.1.20150312",
     "font-awesome": "4.7.0",
     "moment": "2.19.3",
+    "rxjs": "^5.5.5",
     "web-animations-js": "^2.3.1",
     "zone.js": "0.8.18"
   },

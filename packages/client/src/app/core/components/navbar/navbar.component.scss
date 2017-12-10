@@ -1,0 +1,38 @@
+@import "../../../../css/colors";
+
+.navbar-container {
+  height: 30px;
+  background-color: var(--blue);
+  padding: 5px 8px;
+  width: 100%;
+}
+
+.main-logo-container {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  height: 30px;
+  opacity: .5;
+  margin-top: 2px;
+}
+
+.main-logo-title {
+  margin-left: 5px;
+  margin-top: 3px;
+  font-weight: 600;
+  color: var(--light-blue-grey);
+}
+
+.user-section {
+  margin-right: 15px;
+}
+
+.navbar-button {
+  margin-left: 10px;
+}
+
+.user-avatar{
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+}

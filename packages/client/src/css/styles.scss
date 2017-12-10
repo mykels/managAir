@@ -3,12 +3,40 @@
 
 html,
 body {
-  font-family: 'Assistant', sans-serif;
   background-color: #ffffff;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  direction: ltr;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased !important;
+
 }
 
 * {
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Raleway', 'Amatica SC', 'Open Sans Condensed', 'Helvetica', sans-serif;
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}
+
+.fcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.fend {
+  align-items: end;
 }

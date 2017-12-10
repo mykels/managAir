@@ -1,0 +1,14 @@
+<div class="frow center">
+    <div class="fcol">
+        <div class="section-title">
+            <h4>Personal Boards</h4>
+        </div>
+
+        <div class="frow">
+            <mng-board-tile *ngFor="let board of boards$ | async"
+                            [board]="board"
+                            (click)="onBoardClick(board)">
+            </mng-board-tile>
+        </div>
+    </div>
+</div>

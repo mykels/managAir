@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from "@angular/platform-browser";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.module.routing";
-import { MasterComponent } from './master/master.component';
+import { BoardModule } from "./board/board.module";
+import { CoreModule } from "./core/core.module";
+import { SharedModule } from "./shared/shared.module";
+import { MasterComponent } from "./view/master/master.component";
 
 @NgModule({
     declarations: [
@@ -11,9 +12,10 @@ import { MasterComponent } from './master/master.component';
         MasterComponent,
     ],
     imports: [
-        BrowserAnimationsModule,
-        BrowserModule,
         AppRoutingModule,
+        CoreModule,
+        SharedModule.forRoot(),
+        BoardModule,
     ],
     bootstrap: [AppComponent],
 })

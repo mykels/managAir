@@ -1,0 +1,56 @@
+:root {
+  // common colors
+  --duck-egg-blue: #e0ebfa;
+  --cool-green: #3dcd58;
+  --cool-green-text-shadow: 0 2px 4px rgba(82, 243, 112, 0.38);
+  --light-blue-grey: rgb(208, 218, 232);
+  --ugly-blue: #315d79;
+  --bluey-grey: #afb3c2;
+  --cloudy-blue: #bfccdf;
+  --dark-blue-grey: rgb(32, 52, 67);
+  --dark-sky-blue: rgb(0, 121, 191);
+  --white: #ffffff;
+  --blue: #026aa7;
+  --border: #f6f6f7;
+  --hover: #ecf7ff;
+  --light-border: rgba(206, 218, 233, 0.5);
+  --grey-background: #f6f7fb;
+  --orange: #f6a623;
+  --pink: #f94c62;
+  --red: rgb(212, 82, 94);
+  --dark-brown: #4a4a4a;
+  --black: #000000;
+  --dodger-blue: rgb(83, 153, 248);
+  --purple: #ac4eff;
+  --white-two: #f6f6f6;
+  --retro-blue: #315d79;
+  --light-blue-grey-two: #cbd1e4;
+  --pale-grey: #eaebf1;
+  --navy-blue: #315d79;
+  --darkish-blue: #314663;
+  --darkish-pink: #e3465a;
+
+  // se-button colors
+  --button-green: linear-gradient(148deg, #80f3b5, var(--cool-green));
+  --button-green-shadow: 10px 12px 20px 0 rgba(123, 245, 146, 0.33);
+  --button-blue: linear-gradient(148deg, var(--dark-sky-blue), var(--navy-blue));
+  --button-blue-shadow: 10px 12px 20px 0 rgba(74, 144, 226, 0.26);
+  --button-dark-blue: linear-gradient(148deg, var(--blue), var(--darkish-blue));
+  --button-black: linear-gradient(151deg, #2b4f68, #132937);
+  --button-black-shadow: 0px 12px 20px 0 #142835;
+  --button-red: linear-gradient(151deg, #f5515f, #ff2b78);
+  --button-red-shadow: 10px 12px 20px 0 rgba(234, 76, 137, 0.2);
+
+  // palette default colors
+  --primary-color: var(--cool-green);
+  --primary-color-text-shadow: var(--cool-green-text-shadow);
+  --primary-darken-color: #2aac43;
+  --primary-lighten-color: rgb(164, 231, 175);
+  --primary-text-color: var(--dark-blue-grey);
+  --background-color: var(--grey-background);
+  --primary-button-color: var(--button-green);
+  --primary-button-color-shadow: var(--button-green-shadow);
+  --navbar-color: var(--primary-color);
+  --navbar-darken-color: var(--primary-darken-color);
+  --navbar-lighten-color: var(--primary-lighten-color);
+}

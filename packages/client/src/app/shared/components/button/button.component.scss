@@ -1,0 +1,24 @@
+@import "../../../../css/colors";
+
+.main-button {
+  position: relative;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+  background: hsla(0, 0%, 100%, .3);
+  border-radius: 3px;
+  color: #f3f3f3;
+  font-weight: 700;
+  line-height: 30px;
+  min-width: 30px;
+  padding: 0 8px;
+}
+
+.button-icon {
+  height: 20px;
+  width: 20px;
+  line-height: 30px;
+  color: var(--light-blue-grey);
+}
+
+.button-title {
+}

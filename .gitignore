@@ -5,4 +5,4 @@ src/public/**
 public/software/**
 coverage
 test-report.xml
-.idea/
+.idea

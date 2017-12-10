@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html,
+body {
+  font-family: 'Assistant', sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: 'Assistant', sans-serif;
+}

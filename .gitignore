@@ -1,0 +1,8 @@
+dist
+node_modules
+# public images loadinf from citrix
+src/public/**
+public/software/**
+coverage
+test-report.xml
+.idea/

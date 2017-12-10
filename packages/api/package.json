@@ -1,0 +1,44 @@
+{
+  "name": "ManagAir",
+  "author": "mykels",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ts-node src/index.ts",
+    "start:debug": "nodemon --exec ts-node --inspect src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "1.6.7",
+    "nodemon": "1.12.1",
+    "rimraf": "2.6.2",
+    "ts-node": "3.3.0",
+    "typescript": "2.6.2"
+  },
+  "dependencies": {
+    "@accounts/server": "0.1.0-alpha.f9ef5e7f",
+    "@types/lodash": "4.14.86",
+    "@types/moment": "2.13.0",
+    "@types/request-promise-native": "1.0.10",
+    "@types/uuid": "3.4.3",
+    "@types/winston": "2.3.7",
+    "arrify": "1.0.1",
+    "body-parser": "1.18.2",
+    "compression": "1.7.1",
+    "cors": "2.8.4",
+    "express": "4.16.2",
+    "express-session": "1.15.6",
+    "lerna": "^2.5.1",
+    "lodash": "4.17.4",
+    "moment": "2.19.3",
+    "morgan": "1.9.0",
+    "node-fetch": "1.7.3",
+    "request": "2.83.0",
+    "request-promise-native": "1.0.5",
+    "url-join": "2.0.2",
+    "uuid": "3.1.0",
+    "winston": "2.4.0"
+  },
+  "engines": {
+    "node": "^8.0.0"
+  }
+}

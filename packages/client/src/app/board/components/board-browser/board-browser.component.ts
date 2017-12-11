@@ -5,11 +5,11 @@ import { BoardService } from "../../services/board.service";
 import { Board } from "../../types/board";
 
 @Component({
-    selector: 'mng-board-navigation',
-    templateUrl: './board-navigation.component.html',
-    styleUrls: ['./board-navigation.component.scss']
+    selector: 'mng-board-browser',
+    templateUrl: './board-browser.component.html',
+    styleUrls: ['./board-browser.component.scss']
 })
-export class BoardNavigationComponent implements OnInit {
+export class BoardBrowserComponent implements OnInit {
 
     boards$: Observable<Board[]>;
 

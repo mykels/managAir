@@ -1,0 +1,48 @@
+@import "../../../../css/colors";
+
+.card-dialog-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.card-dialog-header {
+  .card-dialog-title {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .card-dialog-sub-title {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+.card-dialog-body {
+  margin-top: 15px;
+  height: 400px;
+  width: 600px;
+}
+
+.detail-section {
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.card-dialog-details {
+}
+
+.card-dialog-actions {
+}
+
+.card-comment-section {
+
+}
+
+.card-activity-section {
+
+}

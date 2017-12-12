@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CardModule } from "../card/card.module";
 import { SharedModule } from "../shared/shared.module";
 import { DeckComponent } from "./components/deck/deck.component";
 
@@ -7,6 +8,7 @@ import { DeckComponent } from "./components/deck/deck.component";
         DeckComponent
     ],
     imports: [
+        CardModule,
         SharedModule
     ],
     providers: [],

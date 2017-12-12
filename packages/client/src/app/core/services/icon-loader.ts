@@ -6,7 +6,11 @@ const ICONS = [
     'main-logo',
     'bell',
     'plus',
-    'previous'
+    'previous',
+    'dots',
+    'exit',
+    'comment',
+    'list'
 ];
 
 @Injectable()

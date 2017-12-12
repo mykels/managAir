@@ -40,3 +40,40 @@ body {
 .fend {
   align-items: end;
 }
+
+.fgrow-1 {
+  flex-grow: 1;
+}
+
+.fgrow-2 {
+  flex-grow: 2;
+}
+
+.fgrow-3 {
+  flex-grow: 3;
+}
+
+.fgrow-4 {
+  flex-grow: 4;
+}
+
+.fgrow-5 {
+  flex-grow: 4;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.small-icon {
+  height: 18px !important;
+  width: 18px !important;;
+}

@@ -1,5 +1,4 @@
-<div class="deck">
-    <div *ngFor="let card of deck.cards">
-        <mng-card [card]="card"></mng-card>
-    </div>
+<div class="card"
+     (click)="onCardClick()">
+    {{card.title}}
 </div>

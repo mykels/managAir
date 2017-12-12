@@ -6,5 +6,46 @@
   height: 100%;
   background-color: var(--light-blue-grey);
   border-radius: 3px;
-  margin-left:10px;
+  margin-left: 10px;
+}
+
+.deck-header {
+  height: 30px;
+  padding: 6px;
+  font-weight: 600;
+}
+
+.deck-cards-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.card-options {
+  height: 14px;
+  width: 14px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--light-blue-grey-two);
+  }
+}
+
+.deck-footer {
+  height: 25px;
+  padding: 5px;
+  border-top: 1px solid var(--slightly-dark-blue-grey);
+  border-radius: 4px;
+  cursor: pointer;
+
+  .add-card {
+    color: var(--dark-blue-grey);
+    border-radius: 0 0 3px 3px;
+    padding: 8px 10px;
+  }
+
+  &:hover {
+    background-color: var(--light-blue-grey-two);
+  }
 }

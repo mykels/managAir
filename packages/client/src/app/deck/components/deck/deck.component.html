@@ -1,5 +1,28 @@
-<div class="deck">
-    <div *ngFor="let card of deck.cards">
+<div class="deck fcol sb">
+    <div>
+        <!--TODO: make component-->
+        <div class="deck-header frow sb">
+            <div>
+                {{deck.name}}
+            </div>
+            <mat-icon svgIcon="dots"
+                      class="card-options">
+            </mat-icon>
+        </div>
 
+        <div class="deck-cards-container">
+            <mng-card *ngFor="let card of deck.cards"
+                      [card]="card"
+                      [ownerDeck]="deck">
+            </mng-card>
+        </div>
     </div>
+
+    <!--TODO: make component-->
+    <div class="deck-footer frow">
+        <a class="add-card">
+            Add a card...
+        </a>
+    </div>
+
 </div>

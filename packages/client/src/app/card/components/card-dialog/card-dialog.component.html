@@ -1,0 +1,42 @@
+<div class="card-dialog-container fcol">
+    <div class="card-dialog-header frow sb">
+        <div class="fcol">
+            <div class="card-dialog-title">
+                {{card.title}}
+            </div>
+            <div class="card-dialog-sub-title">
+                in list <strong class="link">{{ownerDeck.name}}</strong>
+            </div>
+        </div>
+        <mat-icon svgIcon="exit" class="small-icon clickable"
+                  (click)="onClose()">
+        </mat-icon>
+    </div>
+    <div class="card-dialog-body frow">
+        <div class="card-dialog-details fgrow-4">
+            <div class="detail-section">
+                <div class="frow">
+                    <mat-icon svgIcon="comment"
+                              class="small-icon">
+                    </mat-icon>
+                    <div class="section-title">
+                        Add Comment
+                    </div>
+                </div>
+            </div>
+            <div class="detail-section">
+                <div class="frow">
+                    <mat-icon svgIcon="list"
+                              class="small-icon">
+                    </mat-icon>
+                    <div class="section-title">
+                        Activity
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-dialog-actions fgrow-2">
+
+        </div>
+    </div>
+</div>

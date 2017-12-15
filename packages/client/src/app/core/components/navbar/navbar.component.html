@@ -16,7 +16,8 @@
     <div class="user-section frow">
         <mng-button icon="plus" class="navbar-button"></mng-button>
         <mng-button icon="bell" class="navbar-button"></mng-button>
-        <img src="/assets/images/default-avatar.png"
-             class="user-avatar navbar-button"/>
+        <mng-avatar [imageUrl]="loggedInUser?.imageUrl"
+                    class="navbar-button">
+        </mng-avatar>
     </div>
 </div>

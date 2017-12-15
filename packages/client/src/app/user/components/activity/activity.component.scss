@@ -1,0 +1,14 @@
+@import "../../../../css/colors";
+
+.activity-container {
+  margin-top: 10px;
+}
+
+.comment-editor-container {
+  background: var(--white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .33);
+  margin: 0;
+  padding: 9px 11px 0;
+  resize: none;
+  border-radius: 3px;
+}

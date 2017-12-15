@@ -1,0 +1,21 @@
+<div class="frow comment-container">
+    <div class="fcol">
+        <mng-avatar [imageUrl]="user?.imageUrl"
+                    class="comment-avatar">
+        </mng-avatar>
+    </div>
+    <div class="fcol fgrow-5">
+        <div class="comment-editor-container">
+            <textarea placeholder="Write a comment..."
+                      [(ngModel)]="comment.text"
+                      #commentInput>
+            </textarea>
+        </div>
+        <button mat-button
+                class="submit-button btn-s"
+                [disabled]="!(comment?.text?.length > 0)"
+                (click)="onSave()">
+            Save
+        </button>
+    </div>
+</div>

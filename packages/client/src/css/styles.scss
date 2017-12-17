@@ -96,6 +96,7 @@ body {
   color: var(--white);
   outline: none;
   text-align: center;
+  border-radius: 3px;
 
   &:disabled {
     background-color: var(--pale-grey);

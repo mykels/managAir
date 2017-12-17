@@ -3,7 +3,7 @@
         <!--TODO: make component-->
         <div class="deck-header frow sb">
             <div>
-                {{deck.name}}
+               {{ deck.name }}
             </div>
             <mat-icon svgIcon="dots"
                       class="card-options">
@@ -11,7 +11,7 @@
         </div>
 
         <div class="deck-cards-container">
-            <mng-card *ngFor="let card of deck.cards"
+            <mng-card *ngFor="let card of deck.cards trackBy:card?.id"
                       [card]="card"
                       [ownerDeck]="deck">
             </mng-card>

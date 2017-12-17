@@ -1,17 +1,18 @@
 <div class="frow activity-container">
     <div class="fcol">
         <mng-avatar [imageUrl]="user?.imageUrl"
-                    class="comment-avatar">
+                    class="activity-avatar">
         </mng-avatar>
     </div>
-    <div class="fcol fgrow-5">
+    <div class="fcol">
         <div class="user-name-title">
-            {{user.name}}
+            {{ user.name }}
         </div>
         <div class="comment-editor-container">
-            <div>
-                {{activity.comment.text}}
-            </div>
+            <textarea [ngModel]="activity.comment.text"
+                      [disabled]="true"
+                      matInput matTextareaAutosize>
+            </textarea>
         </div>
         <div class="comment-edit-bar">
 

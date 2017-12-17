@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'master',
+  selector: 'mng-master',
   templateUrl: './master.component.html',
   styleUrls: ['./master.component.scss']
 })

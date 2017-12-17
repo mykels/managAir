@@ -2,13 +2,28 @@
 
 .activity-container {
   margin-top: 10px;
+
+  textarea {
+    background: var(--white);
+    border: none;
+    outline: none;
+    resize: none;
+    word-wrap: break-word;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .comment-editor-container {
   background: var(--white);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .33);
-  margin: 0;
-  padding: 9px 11px 0;
+  margin-top: 3px;
+  padding: 9px 11px 5px;
   resize: none;
   border-radius: 3px;
+  max-width: 100%;
+}
+
+.activity-avatar {
+  margin: 0 10px 0 10px;
 }

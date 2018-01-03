@@ -2,6 +2,7 @@
 
 .activity-container {
   margin-top: 10px;
+  margin-bottom: 1px;
 
   textarea {
     background: var(--white);
@@ -21,7 +22,6 @@
   padding: 9px 11px 5px;
   resize: none;
   border-radius: 3px;
-  max-width: 100%;
 }
 
 .activity-avatar {

@@ -1,4 +1,6 @@
 <div class="card"
+     dnd-sortable
+     [sortableIndex]="cardIndex"
      (click)="onCardClick()">
-   {{ card.title }}
+    {{ card?.title }}
 </div>

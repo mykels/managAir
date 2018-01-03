@@ -3,18 +3,28 @@
         <!--TODO: make component-->
         <div class="deck-header frow sb">
             <div>
-               {{ deck.name }}
+                {{ deck.name }}
             </div>
             <mat-icon svgIcon="dots"
                       class="card-options">
             </mat-icon>
         </div>
 
-        <div class="deck-cards-container">
-            <mng-card *ngFor="let card of deck.cards trackBy:card?.id"
+        <div *ngIf="deck.cards.length > 0"
+             class="deck-cards-container"
+             dnd-sortable-container
+             [sortableData]="deck.cards">
+            <mng-card *ngFor="let card of deck.cards; let cardIndex = index"
                       [card]="card"
+                      [cardIndex]="cardIndex"
                       [ownerDeck]="deck">
             </mng-card>
+        </div>
+        <div *ngIf="deck.cards.length === 0"
+             class="deck-cards-container"
+             dnd-sortable-container
+             [sortableData]="deck.cards">
+            <div class="empty-deck-dropzone"></div>
         </div>
     </div>
 
@@ -24,5 +34,4 @@
             Add a card...
         </a>
     </div>
-
 </div>

@@ -2,7 +2,7 @@
 
 .deck {
   width: 270px;
-  min-height: 300px;
+  min-height: 400px;
   height: 100%;
   background-color: var(--light-blue-grey);
   border-radius: 3px;
@@ -32,6 +32,11 @@
   }
 }
 
+.empty-deck-dropzone {
+  height: 300px;
+  width: 100%;
+}
+
 .deck-footer {
   height: 25px;
   padding: 5px;
@@ -47,5 +52,6 @@
 
   &:hover {
     background-color: var(--light-blue-grey-two);
+    box-shadow: 0 1px 0 var(--bluey-grey);
   }
 }

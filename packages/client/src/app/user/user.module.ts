@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatTextareaAutosize } from "@angular/material";
 import { SharedModule } from "../shared/shared.module";
 import { CommentComponent } from "./components/comment/comment.component";
 import { AvatarComponent } from "./components/avatar/avatar.component";

@@ -3,8 +3,7 @@ import { Express } from 'express';
 import { createServer } from "http";
 import { PORT } from "../core/config/config";
 import logger from "../core/logs/logger";
-import { MiddlewareConfigurator } from "./configurators/middleware-configurator";
-import { RouteConfigurator } from "./configurators/route-configurator";
+import { configurators } from "./configurators/configurators";
 
 export class Server {
     static app: Express = express();
@@ -22,8 +21,7 @@ export class Server {
     }
 
     static configure() {
-        MiddlewareConfigurator.configure(Server.app);
-        RouteConfigurator.configure(Server.app);
+        configurators.forEach(configurator => configurator.configure(Server.app));
     }
 
     static listen() {

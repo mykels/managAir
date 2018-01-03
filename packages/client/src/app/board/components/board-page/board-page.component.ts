@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
+import { Observable } from "rxjs/Observable";
 import { BoardService } from "../../services/board.service";
 import { Board } from "../../types/board";
 
@@ -9,7 +10,7 @@ import { Board } from "../../types/board";
     styleUrls: ['./board-page.component.scss']
 })
 export class BoardPageComponent implements OnInit {
-    private board: Board;
+    private board$: Observable<Board>;
 
     constructor(private activeRoute: ActivatedRoute,
                 private boardService: BoardService) {
@@ -21,9 +22,8 @@ export class BoardPageComponent implements OnInit {
 
     initBoard() {
         this.activeRoute.params.subscribe(params => {
-            this.boardService.get(params.id).subscribe(board => {
-                this.board = board;
-            });
+            console.log("getting board with id " + params.id);
+            this.board$ = this.boardService.get(params.id);
         });
     }
 }

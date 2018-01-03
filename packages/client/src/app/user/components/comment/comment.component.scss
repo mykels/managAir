@@ -9,13 +9,13 @@
     resize: none;
     word-wrap: break-word;
     overflow: hidden;
+    width: 100%;
   }
 }
 
 .comment-editor-container {
   background: var(--white);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .33);
-  height: 55px;
   min-height: 55px;
   margin: 0;
   padding: 9px 11px 0;

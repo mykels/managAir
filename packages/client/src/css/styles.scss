@@ -2,6 +2,16 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '../css/colors';
 
+@font-face {
+  font-family: 'Segoeuisl';
+  src: url('../assets/fonts/segoe-ui.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pfennig';
+  src: url('../assets/fonts/pfennig-webfont.woff') format('woff');
+}
+
 /*********************************
               global
  *********************************/
@@ -17,11 +27,10 @@ body {
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased !important;
-
 }
 
 * {
-  font-family: 'Raleway', 'Amatica SC', 'Open Sans Condensed', 'Helvetica', sans-serif;
+  font-family: 'Segoeuisl', 'Pfennig', 'Helvetica', sans-serif;
 }
 
 /*********************************
@@ -98,6 +107,11 @@ body {
   text-align: center;
   border-radius: 3px;
 
+  &:hover {
+    transition: 0.1s linear;
+    color: var(--duck-egg-blue);
+  }
+
   &:disabled {
     background-color: var(--pale-grey);
     color: var(--light-blue-grey);
@@ -120,4 +134,17 @@ body {
 .btn-s {
   width: 55px;
   max-width: 55px;
+}
+
+/*********************************
+           dnd overrides
+ *********************************/
+
+.dnd-sortable-drag {
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9) rotate(1deg);
+  opacity: 0.6;
+  transition: 0.2s linear;
+  border: 1px solid var(--bluey-grey);
 }

@@ -4,9 +4,10 @@ import * as cors from 'cors';
 import { Express } from 'express';
 import * as morgan from 'morgan';
 import { LOG_LEVEL } from "../../core/config/config";
+import { IServerConfigurator } from "./server-configurator";
 
-export class MiddlewareConfigurator {
-    static configure(app: Express) {
+export class MiddlewareConfigurator implements IServerConfigurator {
+    configure(app: Express) {
         app.use(morgan(LOG_LEVEL));
         app.use(cors());
         app.use(bodyParser.urlencoded({extended: false}));

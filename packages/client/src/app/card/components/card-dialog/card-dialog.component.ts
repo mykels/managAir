@@ -1,10 +1,11 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material";
-import { Deck } from "../../../deck/types/deck";
-import { Card } from "../../types/card";
 import { User } from 'app/user/types/user';
+import { Observable } from "rxjs/Observable";
+import { Deck } from "../../../deck/types/deck";
 import { LoginService } from "../../../user/services/login.service";
 import { CardService } from "../../services/card.service";
+import { Card } from "../../types/card";
 
 @Component({
     selector: 'mng-card-dialog',
@@ -14,7 +15,7 @@ import { CardService } from "../../services/card.service";
 export class CardDialogComponent implements OnInit {
     card: Card;
     ownerDeck: Deck;
-    loggedInUser: User;
+    loggedInUser$: Observable<User>;
 
     constructor(private dialogRef: MatDialogRef<CardDialogComponent>,
                 private cardService: CardService,
@@ -25,11 +26,11 @@ export class CardDialogComponent implements OnInit {
     ngOnInit() {
         this.card = this.dialogParams.card;
         this.ownerDeck = this.dialogParams.ownerDeck;
-        this.loggedInUser = this.loginService.getLoggedInUser();
+        this.loggedInUser$ = this.loginService.getLoggedInUser();
     }
 
-    onNewComment(comment: Comment) {
-        this.cardService.saveComment(this.card, comment, this.loggedInUser);
+    onNewComment(comment: Comment, loggedInUser: User) {
+        this.cardService.saveComment(this.card, comment, loggedInUser);
     }
 
     onClose() {

@@ -2,7 +2,7 @@
     <div class="card-dialog-header frow sb">
         <div class="fcol">
             <div class="card-dialog-title">
-               {{ card.title }}
+                {{ card.title }}
             </div>
             <div class="card-dialog-sub-title">
                 in list <strong class="link">{{ ownerDeck.name }}</strong>
@@ -23,7 +23,7 @@
                         Add Comment
                     </div>
                 </div>
-                <mng-comment [user]="loggedInUser"
+                <mng-comment [user]="loggedInUser$ | async"
                              (saved)="onNewComment($event)">
                 </mng-comment>
             </div>
@@ -39,7 +39,7 @@
 
                 <mng-activity *ngFor="let activity of card.activities"
                               [activity]="activity"
-                              [user]="loggedInUser">
+                              [user]="loggedInUser$ | async">
                 </mng-activity>
             </div>
         </div>

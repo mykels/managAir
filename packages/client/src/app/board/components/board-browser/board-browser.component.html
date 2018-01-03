@@ -5,7 +5,7 @@
         </div>
 
         <div class="frow">
-            <mng-board-tile *ngFor="let board of boards$ | async trackBy:board?.id"
+            <mng-board-tile *ngFor="let board of (boards$ | async)"
                             [board]="board"
                             (click)="onBoardClick(board)">
             </mng-board-tile>

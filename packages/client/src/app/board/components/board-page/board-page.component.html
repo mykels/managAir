@@ -1,11 +1,12 @@
 <div class="board-page-container">
     <div class="board-title-section frow">
-        <h4>{{ board?.name }}</h4>
+        <h4>{{ (board$ | async)?.name }}</h4>
     </div>
 
     <div class="decks-container frow">
-        <mng-deck *ngFor="let deck of board.decks trackBy:deck?.id"
-                  [deck]="deck">
+        <mng-deck *ngFor="let deck of (board$ | async)?.decks; let deckIndex = index"
+                  [deck]="deck"
+                  [deckIndex]="deckIndex">
         </mng-deck>
     </div>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IconLoader } from "./core/services/icon-loader";
+import { ApolloInitializer } from "./core/services/apollo/apollo-initializer";
+import { IconLoader } from "./core/services/icon/icon-loader";
 
 @Component({
     selector: 'mng-root',
@@ -7,14 +8,20 @@ import { IconLoader } from "./core/services/icon-loader";
     styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-    constructor(private iconLoader: IconLoader) {
+    constructor(private apolloInitializer: ApolloInitializer,
+                private iconLoader: IconLoader) {
     }
 
     ngOnInit(): void {
+        this.initApollo();
         this.loadSvgIcons();
     }
 
-    loadSvgIcons() {
+    private initApollo() {
+        this.apolloInitializer.init();
+    }
+
+    private loadSvgIcons() {
         this.iconLoader.load();
     }
 }

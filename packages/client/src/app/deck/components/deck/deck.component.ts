@@ -8,6 +8,7 @@ import { Deck } from "../../types/deck";
 })
 export class DeckComponent implements OnInit {
     @Input() deck: Deck;
+    @Input() deckIndex: number;
 
     constructor() {
     }

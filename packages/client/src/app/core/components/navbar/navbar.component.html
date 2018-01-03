@@ -16,7 +16,7 @@
     <div class="user-section frow">
         <mng-button icon="plus" class="navbar-button"></mng-button>
         <mng-button icon="bell" class="navbar-button"></mng-button>
-        <mng-avatar [imageUrl]="loggedInUser?.imageUrl"
+        <mng-avatar [imageUrl]="(loggedInUser$ | async)?.imageUrl"
                     class="navbar-button">
         </mng-avatar>
     </div>

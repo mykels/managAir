@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon --exec ts-node src/index.ts",
-    "start:debug": "nodemon --exec ts-node --inspect src/index.ts"
+    "start:debug": "ts-node --inspect src/index.ts",
+    "json:server": "json-server --watch db.json"
   },
   "devDependencies": {
     "@types/node-fetch": "1.6.7",
@@ -26,12 +27,18 @@
     "compression": "1.7.1",
     "cors": "2.8.4",
     "express": "4.16.2",
+    "express-graphql": "^0.6.11",
     "express-session": "1.15.6",
+    "graphql": "^0.12.3",
+    "graphql-tag": "^2.6.1",
+    "graphql-tools": "^2.14.1",
     "lerna": "^2.5.1",
+    "loadash": "^1.0.0",
     "lodash": "4.17.4",
     "moment": "2.19.3",
     "morgan": "1.9.0",
     "node-fetch": "1.7.3",
+    "pg": "^7.4.0",
     "request": "2.83.0",
     "request-promise-native": "1.0.5",
     "url-join": "2.0.2",

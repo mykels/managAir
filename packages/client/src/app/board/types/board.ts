@@ -3,8 +3,9 @@ import { User } from "../../user/types/user";
 
 export interface Board {
     id: string;
-    name: string;
+    name?: string;
     starred?: boolean;
-    decks: Deck[];
-    users: User[];
+    owner?: User;
+    decks?: Deck[];
+    members?: User[];
 }

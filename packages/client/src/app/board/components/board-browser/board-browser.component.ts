@@ -10,14 +10,14 @@ import { Board } from "../../types/board";
     styleUrls: ['./board-browser.component.scss']
 })
 export class BoardBrowserComponent implements OnInit {
-
     boards$: Observable<Board[]>;
 
     constructor(private boardService: BoardService, private router: Router) {
     }
 
     ngOnInit() {
-        this.boards$ = this.boardService.getAll();
+        this.boards$ = this.boardService.getMyBoards();
+
     }
 
     onBoardClick(board: Board) {
